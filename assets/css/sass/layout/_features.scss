@@ -1,0 +1,124 @@
+
+/*-----------------------------
+  section__stories
+-----------------------------*/
+.section__stories {
+  background-image: url("../img/charity/banner-bg/dot-pink.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 14.5vw 25px;
+  margin-top: 60px;
+  .title_sections {
+    margin-bottom: 40px;
+    h2 {
+      font-size: 36px;
+    }
+  }
+  .content {
+    padding-right: 0;
+    .sub-title {
+      font-weight: bold;
+      font-size: 24px;
+      color: #33AAA4;
+      margin-bottom: 0;
+    }
+    p {
+      font-weight: bold;
+      font-size: 18px;
+      color: #565656;
+      margin-bottom: 7px;
+    }
+    span {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      color: #565656;
+    }
+  }
+  .plus-icon {
+    display:inline-block;
+    width:15px;
+    height:15px;      
+    background:
+    linear-gradient(#565656,#565656),
+    linear-gradient(#565656,#565656);
+    background-position:center;
+    background-size: 100% 5px,5px 100%; /*thickness = 2px, length = 50% (25px)*/
+    background-repeat:no-repeat;
+    transform: translateY(60px);
+    position: relative;
+    right: -20px;
+  }
+
+}
+
+.section__team {
+  background-image: url("../img/charity/banner-bg/dot-green.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 48.5vw bottom;
+  margin-top: 60px;
+  padding-bottom: 0;
+  .title_sections {
+    position: relative;
+    margin-bottom: 40px;
+    h2 {
+      font-size: 36px;
+    }
+    p {
+      &::before {
+        content: "";
+        width: 89px;
+        height: 112px;
+        display: inline-block;
+        position: absolute;
+        background: #DB9591;
+        top: -50px;
+        left: -65px;
+        z-index: -1;
+      }
+    }
+  }
+  .conten {
+    ul {
+      padding-inline-start: 0;
+      
+      li {
+        list-style: none;
+        margin-bottom: 40px;
+        position: relative;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        color: #565656;
+        width: 90%;
+        &:nth-of-type(2) {
+          &::before {
+            top: 24px;
+          }
+        }
+        &:nth-of-type(3) {
+          &::before {
+            top: 24px;
+          }
+        }
+        &::before {
+          content: "";
+          width: 10px;
+          height: 10px;
+          border-radius: 1000px;
+          background-color: #565656;
+          display: block;
+          position: absolute;
+          left: -20px;
+          top: 33px;
+        }
+      }
+    }
+    .banner-image {
+      margin-top: 0;
+    }
+  }
+}
+
+

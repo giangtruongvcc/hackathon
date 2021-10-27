@@ -1,0 +1,197 @@
+/*
+    CSS Table of Sections
+    --------------------------
+    ** demo_1
+    --------------------------
+    ** demo_2
+    --------------------------
+    ** demo_3
+    --------------------------
+    ** demo_4
+    --------------------------
+    ** banner_demo4
+    --------------------------
+    ** banner_demo5
+    --------------------------
+    ** banner_demo6
+    --------------------------
+    ** banner_demo7
+    --------------------------
+    ** banner_demo8
+    --------------------------
+    ** banner_title
+    --------------------------
+    ** demo__charity
+    --------------------------
+    ** demo__workspace
+    --------------------------
+    ** demo__software
+    --------------------------
+    **banner_cotact_one
+    --------------------------
+    **banner_cotact_four
+    -------------------------
+    **banner_cotact_five
+    --------------------------
+    **banner_about
+    --------------------------
+    **banner_about_two
+    --------------------------
+    **banner_about_three
+    --------------------------
+    **banner_bg_pricing
+    --------------------------
+    **banner_blog_inner
+    --------------------------
+    **banner_Sblog_default
+    --------------------------
+    **banner_app_two
+    --------------------------
+    **banner_personal
+    --------------------------
+    **blog-banner_with_image
+    --------------------------
+    **single_blog
+    --------------------------
+    **banner_app_three
+    --------------------------
+
+*/
+
+/*-----------------------------
+  demo_1
+-----------------------------*/
+.demo_1 {
+  &.banner_section {
+    background: rgb(254, 248, 240);
+    background: -moz-linear-gradient(
+      360deg,
+      rgba(254, 248, 240, 0) 0%,
+      rgba(254, 248, 240, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+      360deg,
+      rgba(254, 248, 240, 0) 0%,
+      rgba(254, 248, 240, 1) 100%
+    );
+    background: linear-gradient(
+      360deg,
+      rgba(254, 248, 240, 0) 0%,
+      rgba(254, 248, 240, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fef8f0",endColorstr="#fef8f0",GradientType=1);
+    height: 100%;
+    padding-top: 10rem;
+    @include maxMobile {
+      padding-top: 6rem;
+    }
+    .banner_title {
+      margin-bottom: 30px;
+      .fs36 {
+        font-size: 36px;
+      }
+      h1 {
+        color: $dark-color;
+      }
+      p {
+        color: $gray-color;
+        font-size: 24px;
+      }
+    }
+    .image_product {
+      position: relative;
+      img {
+        width: 90%;
+        z-index: 1;
+        position: relative;
+      }
+      &:before {
+        content: "";
+        background-image: url("../img/shape-before-web.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 150px;
+        height: 100%;
+        position: absolute;
+        top: -5%;
+        right: 0;
+        z-index: 0;
+      }
+    }
+    .border-box {
+      border: 2px solid #33AAA4;
+      padding: 10px 60px 10px 0;
+      margin-top: 80px;
+      p {
+        font-size: 14px;
+        color: #565656;
+        padding: 5px 25px 5px 30px;
+        margin-bottom: 0;
+        &.take-note {
+          font-size: 14px !important;
+          color: #F28C24 !important;
+        }
+      }
+      .before-icon {
+        display: flex;
+        &::before {
+          content: "";
+          display: inline-flex;
+          width: 0; 
+          height: 0; 
+          border-top: 5px solid transparent;
+          border-bottom: 5px solid transparent;    
+          border-left:5px solid #33AAA4;
+          position: relative;
+          top: 8px;
+          left: 15px;
+        }
+        &.take-note {
+          &::before {
+            border-left-color: #F28C24;
+          }
+        }
+      }
+    }
+    .img-group {
+      display: flex;
+      margin-top: 10px;
+      margin-right: 20px;
+      margin-left: 30px;
+      img {
+        border-radius: 4px;
+        margin: 0 4px;
+        width: 54px;
+      }
+    }
+    .descrip-banner {
+      margin-top: 30px;
+    }
+    
+    .btn-group {
+      margin-top: 80px;
+      .btn {
+        height: 40px;
+        &.learn {
+          font-weight: 500;
+          font-size: 16px;
+          color: #565656;
+          padding: 8px 35px;
+        }
+      }
+      .btn.register {
+        color: #FFFFFF;
+        background: #020202;
+        padding: 0 0 0 10px;
+        border-radius: 0;
+        .inside_item {
+          background: #33AAA4;
+          padding: 8px 45px;
+          font-weight: 600;
+          font-size: 16px;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
