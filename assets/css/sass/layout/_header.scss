@@ -1,42 +1,4 @@
-/*
-    CSS Table of Sections
-    --------------------------
-    ** Style header Default
-    --------------------------
-    ** header-nav-center
-    --------------------------
-    ** header-nav-left
-    --------------------------
-    ** Fixed header
-    --------------------------
-    ** header-Crypto
-    --------------------------
-    ** header-Crypto Dark
-    --------------------------
-    ** Fixed side menu
-    --------------------------
-    ** header charity
-    --------------------------
-    ** head_host
-    --------------------------
-    ** demo_body_interior (header)
-     --------------------------
-    ** header Charity - left
-     --------------------------
-    ** header__workspace
-     --------------------------
-     ** header_software
-     --------------------------
-     **white_scroll_dark
-     --------------------------
-     **header-black
-     --------------------------
-     
-*/
 
-/*-----------------------------
-  Style header Default
------------------------------*/
 header {
   z-index: 9;
   position: fixed;
@@ -73,7 +35,7 @@ header {
       .logo {
         vertical-align: bottom;
         margin-right: 0.5rem;
-        width: 27px;
+        width: 100%;
       }
     }
     .navbar-collapse {
@@ -124,7 +86,7 @@ header {
       color: $dark-color !important;
       font-size: 18px !important;
       .logo {
-        width: 24px !important;
+       
       }
     }
     .navbar-collapse {

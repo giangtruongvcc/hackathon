@@ -11,6 +11,11 @@
     @content;
   }
 }
+@mixin maxSmall2 {
+  @media (max-width:1199px) {
+    @content;
+  }
+}
 @mixin minSmall {
   @media (min-width:768px) {
     @content;

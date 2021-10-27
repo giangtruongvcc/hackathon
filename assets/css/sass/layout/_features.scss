@@ -8,6 +8,14 @@
   background-size: auto;
   background-position: 14.5vw 25px;
   margin-top: 60px;
+
+  .justify-content-between {
+    .row {
+      @include maxSmall {
+        margin-bottom: 20px;
+      }
+    }
+  }
   .title_sections {
     margin-bottom: 40px;
     h2 {
@@ -82,7 +90,9 @@
   .conten {
     ul {
       padding-inline-start: 0;
-      
+      @include maxMobile {
+        padding-inline-start: 20px;
+      }
       li {
         list-style: none;
         margin-bottom: 40px;
@@ -95,6 +105,9 @@
         &:nth-of-type(2) {
           &::before {
             top: 24px;
+            @include maxSmall {
+              top: 10px;
+            }
           }
         }
         &:nth-of-type(3) {
@@ -112,12 +125,91 @@
           position: absolute;
           left: -20px;
           top: 33px;
+          @include maxSmall {
+            top: 22px;
+          }
         }
       }
     }
     .banner-image {
       margin-top: 0;
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
+  }
+}
+.section__about {
+  position: relative;
+  .block-about {
+    .txt-white {
+      color: #FFFFFF;
+    }
+    span.txt-white {
+      @include maxSmall {
+        color: #565656;
+      }
+    }
+    p.txt-white {
+      font-weight: 700;
+      font-size: 18px;
+      margin-bottom: 7px;
+      margin-top: 10px;
+      @include maxSmall {
+        color: #565656;
+      }
+    }
+    .block-content {
+      background: rgba(249, 249, 249, 0.63);
+      border: 1px solid #F9F9F9;
+      box-sizing: border-box;
+      backdrop-filter: blur(5px);
+      border-radius: 5px;
+      height: 260px;
+      padding: 20px 15px;
+      margin-top: 50px;
+      p.title {
+        font-weight: 600;
+        font-size: 18px;
+        color: #565656;   
+      }
+      p.content {
+        font-weight: 500;
+        font-size: 16px;
+        color: #565656;
+        height: 171px;
+        overflow-y: scroll;
+      }
+    }
+  }
+  .block-color {
+    height: 200px;
+    background-color: #33AAA4;
+    z-index: -1;
+    margin-top: -167px;
+  }
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 4px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #777777; 
+    border-radius: 4px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #777777; 
   }
 }
 
