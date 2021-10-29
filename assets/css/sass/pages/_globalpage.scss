@@ -459,8 +459,9 @@ img {
   .loader_logo {
     position: relative;
     .logo {
-      width: 174px;
-      height: 81px;
+      width: 100%;
+      height: auto;
+      min-width: 250px;
       @include prefixer(
         animation,
         text-focus-in 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both,
