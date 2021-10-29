@@ -6,18 +6,18 @@ header {
   right: 0;
   left: 0;
   width: 100%;
-  border-bottom: 1px solid rgba($dark-color, 0);
+  border-bottom: 1px solid rgba(rgba(255, 255, 255, 0.87), 0);
   @include prefixer(backdrop-filter, saturate(1) blur(20px), webkit moz o ms);
   @include prefixer(transition, 0.3s, webkit moz o ms);
   &.no_blur {
     @include prefixer(backdrop-filter, none, webkit moz o ms);
   }
   .fixed-header & {
-    background: rgba(255, 255, 255, 0.8);
+    background: #121212;
     // This filter is not currently
     // supported on Firefox
     @include prefixer(backdrop-filter, saturate(1) blur(20px), webkit o ms);
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid #565656;
     // == for Firefox 😉 ==
     @-moz-document url-prefix() {
       background: rgba(255, 255, 255, 1);
@@ -83,7 +83,7 @@ header {
       padding: 0.75rem;
     }
     .navbar-brand {
-      color: $dark-color !important;
+      color: rgba(255, 255, 255, 0.87) !important;
       font-size: 18px !important;
       .logo {
        
@@ -95,7 +95,7 @@ header {
         padding-bottom: 1rem;
         .nav-item {
           .nav-link {
-            color: $dark-color !important;
+            color: rgba(255, 255, 255, 0.87) !important;
             &.active {
               color: $blue-color !important;
             }
@@ -105,8 +105,11 @@ header {
       .nav_account {
         border-top: 1px solid $border-color;
         padding: 1rem 0;
+        .navbar-nav {
+          flex-direction: row;
+        }
         .btn-default {
-          color: $dark-color !important;
+          color: rgba(255, 255, 255, 0.87) !important;
         }
         .btn-primary {
           background-color: $blue-color !important;
@@ -115,6 +118,30 @@ header {
       }
     }
   }
+  .switch-block {
+    background: #2F2F2F;
+    border-radius: 15px;
+    width: 74px;
+    height: 30px;
+    border-radius: 1000px;
+    .switch-lang {
+      display: inline-flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 10px;
+      align-items: center;
+      p {
+        margin-bottom: 0;
+        color: #fff;
+      }
+      img {
+        width: 20px;
+        height: 20px;
+        border-radius: 1000px;
+      }
+    }
+  }
+
 }
 
 /*-----------------------------
@@ -125,12 +152,12 @@ header {
   left: 0;
   z-index: 12;
   .navbar-brand {
-    color: $dark-color;
+    color: rgba(255, 255, 255, 0.87);
   }
   .navbar-collapse {
     .nav-item {
       .nav-link {
-        color: $dark-color;
+        color: rgba(255, 255, 255, 0.87);
         @include prefixer(transition, 0.4s, webkit moz o ms);
         &:hover {
           color: $blue-color;
@@ -179,16 +206,16 @@ header {
 .fixed-header {
   header {
     @include maxSmall {
-      background: $white-color !important;
+      background: #121212;
     }
     &.nav-product {
       .navbar-brand {
-        color: $dark-color !important;
+        color: rgba(255, 255, 255, 0.87) !important;
       }
       .nav-pills {
         .nav-item {
           .nav-link {
-            color: $dark-color !important;
+            color: rgba(255, 255, 255, 0.87) !important;
             &.active {
               color: $blue-color !important;
             }
@@ -197,7 +224,7 @@ header {
       }
       .nav_account {
         .btn-default {
-          color: $dark-color !important;
+          color: rgba(255, 255, 255, 0.87) !important;
         }
         .btn-primary {
           background-color: $blue-color !important;
@@ -321,7 +348,7 @@ header {
       .nav-link {
         color: $light-color;
         &:hover {
-          color: $dark-color;
+          color: rgba(255, 255, 255, 0.87);
         }
         &.active {
           color: $orange-red-color;
@@ -412,7 +439,7 @@ header {
         .navbar-nav {
           .nav-item {
             .nav-link {
-              color: $dark-color;
+              color: rgba(255, 255, 255, 0.87);
             }
           }
         }
@@ -480,7 +507,7 @@ header {
 .fixed-header {
   .nav_account {
     .bg-white {
-      background-color: $dark-color !important;
+      background-color: rgba(255, 255, 255, 0.87) !important;
       color: $white-color !important;
     }
   }

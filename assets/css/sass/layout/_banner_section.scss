@@ -63,22 +63,7 @@
 -----------------------------*/
 .demo_1 {
   &.banner_section {
-    background: rgb(254, 248, 240);
-    background: -moz-linear-gradient(
-      360deg,
-      rgba(254, 248, 240, 0) 0%,
-      rgba(254, 248, 240, 1) 100%
-    );
-    background: -webkit-linear-gradient(
-      360deg,
-      rgba(254, 248, 240, 0) 0%,
-      rgba(254, 248, 240, 1) 100%
-    );
-    background: linear-gradient(
-      360deg,
-      rgba(254, 248, 240, 0) 0%,
-      rgba(254, 248, 240, 1) 100%
-    );
+
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fef8f0",endColorstr="#fef8f0",GradientType=1);
     height: 100%;
     padding-top: 10rem;
@@ -91,11 +76,25 @@
         font-size: 36px;
       }
       h1 {
-        color: $dark-color;
-        font-weight: bold;
+        color: rgba(255, 255, 255, 1);
+        font-weight: 600;
+        p::before {
+          content: "";
+          width: 99px;
+          height: 89px;
+          display: inline-block;
+          position: absolute;
+          background: url('../img/g12626.png');
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center center;
+          top: -15px;
+          left: -50px;
+          z-index: 1;
+        }
       }
       p {
-        color: $gray-color;
+        color: rgba(255, 255, 255, 0.6);
         font-size: 24px;
       }
     }
@@ -120,12 +119,28 @@
       }
     }
     .border-box {
-      border: 2px solid #33AAA4;
-      padding: 10px 60px 10px 0;
+      background-image: url("../img/border1.png");
+      padding: 40px 60px 40px 20px;
       margin-top: 80px;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: top center;
+      &-ch {
+        width: 48px;
+        height: 48px;
+        background: #FFFFFF;
+        border-radius: 8px 0px;
+        margin-right: 20px;
+        img {
+          -ms-transform: translateY(20%);
+          transform: translateY(20%);
+          height: 34px;
+          width: auto;
+        }
+      }
       p {
-        font-size: 14px;
-        color: #565656;
+        font-size: 18px;
+        color: rgba(255, 255, 255, 1);
         padding: 5px 25px 5px 30px;
         margin-bottom: 0;
         &.take-note {
@@ -142,7 +157,7 @@
           height: 0; 
           border-top: 5px solid transparent;
           border-bottom: 5px solid transparent;    
-          border-left:5px solid #33AAA4;
+          border-left:5px solid #00FFCE;
           position: relative;
           top: 11px;
           left: 15px;
@@ -162,11 +177,10 @@
       img {
         border-radius: 4px;
         margin: 0 4px;
-        width: 54px;
       }
     }
     .descrip-banner {
-      margin-top: 30px;
+      margin-top: 10px;
     }
     
     .btn-group {
@@ -176,18 +190,19 @@
         &.learn {
           font-weight: 500;
           font-size: 16px;
-          color: #565656;
+          color: rgba(255, 255, 255, 1);
           padding: 8px 10px;
           min-width: 142px;
         }
       }
       .btn.register {
-        color: #FFFFFF;
-        background: #020202;
+        color: #000000;
+        background: rgba(255, 255, 255, 1);;
         padding: 0 0 0 10px;
         border-radius: 0;
+        margin-right: 20px;
         .inside_item {
-          background: #33AAA4;
+          background: #00FFCE;
           padding: 8px 10px;
           min-width: 142px;
           font-weight: 600;
