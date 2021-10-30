@@ -17,7 +17,7 @@ header {
     // This filter is not currently
     // supported on Firefox
     @include prefixer(backdrop-filter, saturate(1) blur(20px), webkit o ms);
-    border-bottom: 1px solid #565656;
+    border-bottom: 0;
     // == for Firefox 😉 ==
     @-moz-document url-prefix() {
       background: rgba(255, 255, 255, 1);
@@ -27,7 +27,7 @@ header {
     }
   }
   .navbar {
-    height: 80px;
+    height: 85px;
     padding: 0;
     .navbar-brand {
       font-weight: 600;

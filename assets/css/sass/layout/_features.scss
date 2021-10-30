@@ -207,7 +207,7 @@
     .sub-title {
       font-weight: bold;
       font-size: 24px;
-      color: #33AAA4;
+      color: #00FFCE;
       margin-bottom: 0;
     }
     p {
@@ -280,6 +280,7 @@
         font-size: 18px;
         color: rgba(255, 255, 255, 1);
         width: 90%;
+        padding-left: 15px;
         &:nth-of-type(2) {
           &::before {
             top: 24px;

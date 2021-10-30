@@ -595,6 +595,9 @@ img {
   z-index, min-width
 -----------------------------*/
 // margin bottom
+.margin-b-0 {
+  margin-bottom: 0 !important;
+}
 .margin-b-1 {
   margin-bottom: 0.625rem !important;
 }
