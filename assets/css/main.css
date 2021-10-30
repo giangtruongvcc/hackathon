@@ -2338,7 +2338,7 @@ header .switch-block .switch-lang {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  padding: 0 10px;
+  padding: 3px 10px 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -5336,7 +5336,7 @@ html:not(.no-js) [data-aos=fade-up] {
   text-align: center;
   line-height: 46px;
   font-size: 18px;
-  color: rgba(22, 93, 245, 0.2);
+  color: #fff;
   left: 0;
   top: 0;
   height: 46px;
