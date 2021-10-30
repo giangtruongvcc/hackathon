@@ -326,6 +326,9 @@
   background-size: auto;
   background-position: 85vw top;
   margin-top: 100px;
+  @include maxMobile {
+    background-position-x: 53vw;
+  }
   .block-about {
     .txt-white {
       color: #FFFFFF;
@@ -405,6 +408,10 @@
   background-size: auto;
   background-position: 0 50px;
   background-origin: padding-box;
+  @include maxMobile {
+    background-position-y: -10px;
+    padding-top: 40px;
+  }
   .title_sections {
     margin-bottom: 2.5rem;
   }
@@ -416,6 +423,9 @@
     background-size: contain;
     background-position: 0 45px;
     background-origin: padding-box;
+    @include maxMobile {
+      background-size: cover;
+    }
     h4 {
       font-size: 24px;
       font-weight: 700;
@@ -600,6 +610,14 @@
         background: #FFFFFF;
         border-radius: 8px 0px;
         margin-right: 20px;
+        @include maxMobile {
+          width: 70px;
+          height: 70px;
+          img {
+            height: 47px !important;
+            transform: translateY(20%) !important;
+          }
+        }
         img {
           -ms-transform: translateY(35%);
           transform: translateY(35%);

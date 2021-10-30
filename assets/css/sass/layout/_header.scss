@@ -69,7 +69,7 @@ header {
     }
   }
   @include maxSmall {
-    background: $white-color;
+    background: #121212;
     // @include prefixer(backdrop-filter, saturate(1) blur(20px), webkit moz o ms);
     .navbar-toggler {
       &:focus {
