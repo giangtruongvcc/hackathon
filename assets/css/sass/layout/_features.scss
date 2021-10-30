@@ -133,7 +133,7 @@
         );
       }
       .txt p {
-        color: rgba(255, 255, 255, 1);
+        color: rgba(255, 255, 255, 0.87);
         font-weight: 600;
         font-size: 18px;
       }
@@ -213,14 +213,14 @@
     p {
       font-weight: bold;
       font-size: 18px;
-      color: rgba(255, 255, 255, 1);
+      color: rgba(255, 255, 255, 0.87);
       margin-bottom: 7px;
     }
     span {
       font-style: normal;
       font-weight: 500;
       font-size: 16px;
-      color: rgba(255, 255, 255, 1);
+      color: rgba(255, 255, 255, 0.87);
     }
   }
   .plus-icon {
@@ -228,8 +228,8 @@
     width:15px;
     height:15px;      
     background:
-    linear-gradient(rgba(255, 255, 255, 1),rgba(255, 255, 255, 1)),
-    linear-gradient(rgba(255, 255, 255, 1),rgba(255, 255, 255, 1));
+    linear-gradient(rgba(255, 255, 255, 0.87),rgba(255, 255, 255, 0.87)),
+    linear-gradient(rgba(255, 255, 255, 0.87),rgba(255, 255, 255, 0.87));
     background-position:center;
     background-size: 100% 5px,5px 100%; /*thickness = 2px, length = 50% (25px)*/
     background-repeat:no-repeat;
@@ -278,7 +278,7 @@
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
-        color: rgba(255, 255, 255, 1);
+        color: rgba(255, 255, 255, 0.87);
         width: 90%;
         padding-left: 15px;
         &:nth-of-type(2) {
@@ -299,7 +299,7 @@
           width: 10px;
           height: 10px;
           border-radius: 1000px;
-          background-color: rgba(255, 255, 255, 1);
+          background-color: rgba(255, 255, 255, 0.87);
           display: block;
           position: absolute;
           left: -20px;
@@ -331,11 +331,11 @@
   }
   .block-about {
     .txt-white {
-      color: #FFFFFF;
+      color: rgba(255, 255, 255, 0.87);
     }
     span.txt-white {
       @include maxSmall {
-        color: rgba(255, 255, 255, 1);
+        color: rgba(255, 255, 255, 0.87);
       }
     }
     p.txt-white {
@@ -344,7 +344,7 @@
       margin-bottom: 7px;
       margin-top: 10px;
       @include maxSmall {
-        color: rgba(255, 255, 255, 1);
+        color: rgba(255, 255, 255, 0.87);
       }
     }
     .block-content {
@@ -359,12 +359,12 @@
       p.title {
         font-weight: 600;
         font-size: 18px;
-        color: rgba(255, 255, 255, 1);   
+        color: rgba(255, 255, 255, 0.87);   
       }
       p.content {
         font-weight: 500;
         font-size: 16px;
-        color: rgba(255, 255, 255, 1);
+        color: rgba(255, 255, 255, 0.87);
         height: 171px;
         overflow-y: scroll;
       }
@@ -458,7 +458,7 @@
         font-weight: 500;
         font-size: 18px;
         line-height: 22px;
-        color: rgba(255, 255, 255, 1);
+        color: rgba(255, 255, 255, 0.87);
         margin-bottom: 20px;
         list-style: none;
         border-radius: 10px 0px;
@@ -528,7 +528,7 @@
   .point__item {
     padding: 0 20px;
     margin-top: 55px;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.87);
     .float-left {
       position: relative;
       padding-left: 30px;
@@ -607,7 +607,7 @@
       &-ch {
         width: 105px;
         height: 105px;
-        background: #FFFFFF;
+        background: rgba(255, 255, 255, 0.87);
         border-radius: 8px 0px;
         margin-right: 20px;
         @include maxMobile {

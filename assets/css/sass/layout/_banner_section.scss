@@ -76,7 +76,7 @@
         font-size: 36px;
       }
       h1 {
-        color: rgba(255, 255, 255, 1);
+        color: rgba(255, 255, 255, 0.87);
         font-weight: 600;
         p::before {
           content: "";
@@ -152,7 +152,7 @@
       }
       p {
         font-size: 18px;
-        color: rgba(255, 255, 255, 1);
+        color: rgba(255, 255, 255, 0.87);
         padding: 5px 25px 5px 30px;
         margin-bottom: 0;
         &.company-name {
@@ -205,7 +205,7 @@
         &.learn {
           font-weight: 500;
           font-size: 16px;
-          color: rgba(255, 255, 255, 1);
+          color: rgba(255, 255, 255, 0.87);
           padding: 8px 10px;
           min-width: 142px;
         }
