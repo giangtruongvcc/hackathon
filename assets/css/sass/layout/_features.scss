@@ -533,6 +533,14 @@
       position: relative;
       padding-left: 30px;
       left: 40px;
+      &.vi {
+        &::before {
+          height: 71%;
+        }
+        @include maxMobile {
+          width: 80%;
+        }
+      }
       &::before {
         content: "";
         display: block;
@@ -542,7 +550,13 @@
         position: absolute;
         left: 1px;
         top: 10px;
+        @include maxMobile {
+          height: 80%;
+        }
       }
+    }
+    .img-vi {
+      height: 301px;
     }
     .item__ico {
       margin-bottom: 45px;
@@ -571,24 +585,37 @@
         }
         span {
           font-size: 13px;
-          &:after {
-            content: "";
-            display: inline-block;
-            width: 10px;
-            height: 2px;
-            background: #00FFCE;
-            position: relative;
-            bottom: 5px;
-            left: 25px;
-          }
         }
         p {
           color: #00FFCE;
           font-size: 18px;
           font-weight: 500;
-          margin-left: 50px;
+          margin-left: 10px;
           @include maxMobile {
-            width: min-content;
+            // width: min-content;
+          }
+          &.time-info {
+            &::before {
+              content: "";
+              display: inline-block;
+              width: 10px;
+              height: 2px;
+              background: #00FFCE;
+              position: absolute;
+              bottom: 11px;
+              left: -15px;
+              @include maxMobile {
+                bottom: unset;
+                top: 15px;
+              }
+            }
+            &.long-content {
+              position: relative;
+              top: -10px;
+              &::before {
+                top: 25px;
+              }
+            }
           }
         }
       }

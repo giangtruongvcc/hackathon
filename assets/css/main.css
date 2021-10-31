@@ -1476,6 +1476,18 @@ img {
   margin-right: 1.875rem !important;
 }
 
+.margin-l-1 {
+  margin-left: 0.625rem !important;
+}
+
+.margin-l-2 {
+  margin-left: 1.25rem !important;
+}
+
+.margin-l-3 {
+  margin-left: 1.875rem !important;
+}
+
 .c-dark {
   color: white !important;
 }
@@ -3386,6 +3398,14 @@ header .switch-block .switch-lang img {
   padding-left: 30px;
   left: 40px;
 }
+.section__time .point__item .float-left.vi::before {
+  height: 71%;
+}
+@media (max-width: 767px) {
+  .section__time .point__item .float-left.vi {
+    width: 80%;
+  }
+}
 .section__time .point__item .float-left::before {
   content: "";
   display: block;
@@ -3395,6 +3415,14 @@ header .switch-block .switch-lang img {
   position: absolute;
   left: 1px;
   top: 10px;
+}
+@media (max-width: 767px) {
+  .section__time .point__item .float-left::before {
+    height: 80%;
+  }
+}
+.section__time .point__item .img-vi {
+  height: 301px;
 }
 .section__time .point__item .item__ico {
   margin-bottom: 45px;
@@ -3428,28 +3456,34 @@ header .switch-block .switch-lang img {
 .section__time .point__item .item__ico .row span {
   font-size: 13px;
 }
-.section__time .point__item .item__ico .row span:after {
+.section__time .point__item .item__ico .row p {
+  color: #00FFCE;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.section__time .point__item .item__ico .row p.time-info::before {
   content: "";
   display: inline-block;
   width: 10px;
   height: 2px;
   background: #00FFCE;
-  position: relative;
-  bottom: 5px;
-  left: 25px;
-}
-.section__time .point__item .item__ico .row p {
-  color: #00FFCE;
-  font-size: 18px;
-  font-weight: 500;
-  margin-left: 50px;
+  position: absolute;
+  bottom: 11px;
+  left: -15px;
 }
 @media (max-width: 767px) {
-  .section__time .point__item .item__ico .row p {
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: min-content;
+  .section__time .point__item .item__ico .row p.time-info::before {
+    bottom: unset;
+    top: 15px;
   }
+}
+.section__time .point__item .item__ico .row p.time-info.long-content {
+  position: relative;
+  top: -10px;
+}
+.section__time .point__item .item__ico .row p.time-info.long-content::before {
+  top: 25px;
 }
 .section__time .img-group {
   display: -webkit-box;
