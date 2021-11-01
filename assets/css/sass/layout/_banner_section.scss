@@ -226,5 +226,20 @@
         }
       }
     }
+    .organizer {
+      left: 8vw;
+      bottom: 60px;
+      @include maxMobile {
+        bottom: 65px;
+        left: 35vw !important;
+      }
+      @include maxSmall {
+        left: 13vw !important;
+        bottom: 90px;
+      }
+      @include maxSmall2 {
+        left: 15vw;
+      }
+    }
   }
 }
