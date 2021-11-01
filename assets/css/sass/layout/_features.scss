@@ -281,6 +281,9 @@
         color: rgba(255, 255, 255, 0.87);
         width: 90%;
         padding-left: 15px;
+        a {
+          color: #00FFCE;
+        }
         &:nth-of-type(2) {
           &::before {
             top: 24px;
@@ -291,7 +294,7 @@
         }
         &:nth-of-type(3) {
           &::before {
-            top: 24px;
+            top: 20px !important;
           }
         }
         &::before {
@@ -312,7 +315,7 @@
       &.en {
         li {
           &::before {
-            top: 47px;
+            top: 35px;
           }
           &:nth-of-type(2) {
             &::before {

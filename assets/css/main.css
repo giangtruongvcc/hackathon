@@ -3158,6 +3158,9 @@ header .switch-block .switch-lang img {
   width: 90%;
   padding-left: 15px;
 }
+.section__team .conten ul li a {
+  color: #00FFCE;
+}
 .section__team .conten ul li:nth-of-type(2)::before {
   top: 24px;
 }
@@ -3167,7 +3170,7 @@ header .switch-block .switch-lang img {
   }
 }
 .section__team .conten ul li:nth-of-type(3)::before {
-  top: 24px;
+  top: 20px !important;
 }
 .section__team .conten ul li::before {
   content: "";
@@ -3186,7 +3189,7 @@ header .switch-block .switch-lang img {
   }
 }
 .section__team .conten ul.en li::before {
-  top: 47px;
+  top: 35px;
 }
 .section__team .conten ul.en li:nth-of-type(2)::before {
   top: 33px;
