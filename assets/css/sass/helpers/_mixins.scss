@@ -32,6 +32,11 @@
     @content;
   }
 }
+@mixin minLarge2 {
+  @media (min-width:1900px) {
+    @content;
+  }
+}
 
 /*-----------------------------
   mixin overlay
