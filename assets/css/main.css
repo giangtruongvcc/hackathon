@@ -2874,24 +2874,24 @@ header .switch-block .switch-lang img {
   height: 100%;
 }
 .demo_1.banner_section .organizer {
-  left: 8vw;
-  bottom: 60px;
+  right: 7vw;
+  bottom: 65px;
 }
 @media (max-width: 767px) {
   .demo_1.banner_section .organizer {
-    bottom: 65px;
-    left: 35vw !important;
+    bottom: 70px !important;
+    right: 25vw !important;
   }
 }
 @media (max-width: 991px) {
   .demo_1.banner_section .organizer {
-    left: 13vw !important;
+    right: 12vw;
     bottom: 90px;
   }
 }
 @media (max-width: 1199px) {
   .demo_1.banner_section .organizer {
-    left: 15vw;
+    right: 10vw;
   }
 }
 
@@ -2954,7 +2954,7 @@ header .switch-block .switch-lang img {
 -----------------------------*/
 .save__nature .item__nature {
   border: 1px solid transparent;
-  padding: 15px 30px 10px;
+  padding: 15px 20px 10px;
   border-radius: 0;
   height: 255px;
   margin-right: auto;
@@ -3036,6 +3036,10 @@ header .switch-block .switch-lang img {
   height: 94px;
 }
 .save__nature .item__nature:nth-of-type(4) .items_serv .icon--top {
+  width: 100px;
+  height: 94px;
+}
+.save__nature .item__nature:nth-of-type(5) .items_serv .icon--top {
   width: 100px;
   height: 94px;
 }

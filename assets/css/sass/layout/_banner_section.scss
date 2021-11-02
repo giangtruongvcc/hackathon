@@ -227,18 +227,18 @@
       }
     }
     .organizer {
-      left: 8vw;
-      bottom: 60px;
+      right: 7vw;
+      bottom: 65px;
       @include maxMobile {
-        bottom: 65px;
-        left: 35vw !important;
+        bottom: 70px !important;
+        right: 25vw !important;
       }
       @include maxSmall {
-        left: 13vw !important;
+        right: 12vw;
         bottom: 90px;
       }
       @include maxSmall2 {
-        left: 15vw;
+        right: 10vw;
       }
     }
   }
