@@ -482,7 +482,6 @@ img {
 .loading_overlay .loader_logo .logo {
   width: 100%;
   height: auto;
-  min-width: 250px;
   -webkit-animation: text-focus-in 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both !important;
   animation: text-focus-in 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both !important;
 }
@@ -1911,6 +1910,10 @@ img {
 
 .font-s-35 {
   font-size: 35px !important;
+}
+
+.font-s-36 {
+  font-size: 36px !important;
 }
 
 .font-s-40 {
@@ -3344,6 +3347,12 @@ header .switch-block .switch-lang img {
   background-size: auto;
   background-position: 0 50px;
   background-origin: padding-box;
+  margin-top: 80px;
+}
+.section__priorities .title {
+  color: rgba(255, 255, 255, 0.37);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
 }
 @media (max-width: 767px) {
   .section__priorities {
@@ -3353,6 +3362,63 @@ header .switch-block .switch-lang img {
 }
 .section__priorities .title_sections {
   margin-bottom: 2.5rem;
+}
+.section__priorities .top-item .block-right {
+  padding-left: 0;
+}
+.section__priorities .top-item .block-right .fac-logo {
+  position: relative;
+  top: -3px;
+}
+.section__priorities .top-item .block-right h6 {
+  color: rgba(255, 255, 255, 0.87);
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+.section__priorities .top-item .prize-cash {
+  color: #00FFCE;
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.section__priorities .top-item .prize-cash span {
+  font-size: 14px;
+  font-weight: 500;
+}
+.section__priorities .bot-item .prize-total {
+  color: #FFC700;
+  letter-spacing: 0.05em;
+  margin-left: -35px;
+  margin-top: 20px;
+}
+.section__priorities .bot-item .prize-total::before {
+  width: 32px;
+  height: 32px;
+  content: "";
+  background-image: url("../img/icons/cash-icon.png");
+  display: inline-block;
+  top: -20px;
+  position: relative;
+}
+.section__priorities .bot-item .prize-total::after {
+  width: 46px;
+  height: 35px;
+  content: "";
+  background-image: url("../img/icons/cash-icon.png");
+  display: inline-block;
+  bottom: -15px;
+  left: -10px;
+  position: relative;
+}
+.section__priorities .bot-item .block-left {
+  background-image: url("../img/border-2-new.png");
+  background-size: 85%;
+}
+.section__priorities .bot-item .block-left .sponsor .des-prize {
+  width: 75%;
+}
+.section__priorities .bot-item .title_sections {
+  margin-top: 0.625rem;
 }
 .section__priorities .block-left {
   padding: 20px 55px 35px;
@@ -3368,11 +3434,11 @@ header .switch-block .switch-lang img {
   }
 }
 .section__priorities .block-left h4 {
-  font-size: 24px;
+  font-size: 36px;
   font-weight: 700;
 }
 .section__priorities .block-right {
-  padding-left: 40px;
+  padding-left: 0;
   padding-right: 0;
   padding-top: 45px;
 }
@@ -3391,8 +3457,8 @@ header .switch-block .switch-lang img {
   margin-bottom: 20px;
 }
 .section__priorities .block-right ul {
-  -webkit-padding-start: 60px;
-          padding-inline-start: 60px;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
 }
 @media (max-width: 991px) {
   .section__priorities .block-right ul {
@@ -3455,8 +3521,50 @@ header .switch-block .switch-lang img {
   color: #565656;
 }
 
-.section__time {
+.section__sponsor {
   margin-top: 170px;
+}
+.section__sponsor .sponsor-block {
+  margin: 50px 0;
+  padding: 55px 0;
+  border-top: 1px solid #2C2C2C;
+  border-bottom: 1px solid #2C2C2C;
+}
+.section__sponsor .sponsor-block div {
+  padding: 0 30px;
+}
+.section__sponsor .sponsor-block div:first-child {
+  padding-left: 0;
+}
+.section__sponsor .sponsor-block div:last-child {
+  padding-right: 0;
+}
+.section__sponsor .content-sponsor {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 20px;
+  position: relative;
+  margin-right: auto;
+}
+.section__sponsor .content-sponsor::before {
+  content: "";
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid #00FFCE;
+  position: absolute;
+  top: 8px;
+  left: -20px;
+}
+
+.section__time {
+  margin-top: 190px;
   background-image: url("../img/bg-time.png");
   background-repeat: no-repeat;
   background-position: 50vw top;

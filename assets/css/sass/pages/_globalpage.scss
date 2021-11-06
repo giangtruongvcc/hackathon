@@ -469,7 +469,7 @@ img {
     .logo {
       width: 100%;
       height: auto;
-      min-width: 250px;
+      // min-width: 250px;
       @include prefixer(
         animation,
         text-focus-in 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both,
@@ -1571,6 +1571,9 @@ img {
 }
 .font-s-35 {
   font-size: 35px !important;
+}
+.font-s-36 {
+  font-size: 36px !important;
 }
 .font-s-40 {
   font-size: 40px !important;

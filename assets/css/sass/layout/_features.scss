@@ -466,6 +466,12 @@
   background-size: auto;
   background-position: 0 50px;
   background-origin: padding-box;
+  margin-top: 80px;
+  .title {
+    color: rgba(255, 255, 255, 0.37);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
   @include maxMobile {
     background-position-y: -10px;
     padding-top: 40px;
@@ -473,7 +479,69 @@
   .title_sections {
     margin-bottom: 2.5rem;
   }
-
+  .top-item {
+    .block-right {
+      padding-left: 0;
+      .fac-logo {
+        position: relative;
+        top: -3px;
+      }
+      h6 {
+        color: rgba(255, 255, 255, 0.87);
+        margin-top: 20px;
+        text-transform: uppercase;
+      }
+    }
+    .prize-cash {
+      color: #00FFCE;
+      font-size: 28px;
+      text-transform: uppercase;
+      font-weight: 600;
+      span {
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+  .bot-item {
+    .prize-total {
+      color: #FFC700;
+      letter-spacing: 0.05em;
+      margin-left: -35px;
+      margin-top: 20px;
+      &::before {
+        width: 32px;
+        height: 32px;
+        content: "";
+        background-image: url("../img/icons/cash-icon.png");
+        display: inline-block;
+        top: -20px;
+        position: relative;
+      }
+      &::after {
+        width: 46px;
+        height: 35px;
+        content: "";
+        background-image: url("../img/icons/cash-icon.png");
+        display: inline-block;
+        bottom: -15px;
+        left: -10px;
+        position: relative;
+      }
+    }
+    .block-left {
+      background-image: url("../img/border-2-new.png");
+      background-size: 85%;
+      .sponsor {
+        .des-prize {
+          width: 75%;
+        }
+      }
+    }
+    .title_sections {
+      margin-top: 0.625rem;
+    }
+  }
   .block-left {
     padding: 20px 55px 35px;
     background-image: url("../img/border2.png");
@@ -486,13 +554,13 @@
     }
 
     h4 {
-      font-size: 24px;
+      font-size: 36px;
       font-weight: 700;
     }
 
   }
   .block-right {
-    padding-left: 40px;
+    padding-left: 0;
     padding-right: 0;
     padding-top: 45px;
     @include maxSmall {
@@ -509,7 +577,7 @@
 
     }
     ul {
-      padding-inline-start: 60px;
+      padding-inline-start: 0;
       @include maxSmall {
         padding-inline-start: 10px;
       }
@@ -577,8 +645,53 @@
 
 }
 
-.section__time {
+.section__sponsor {
   margin-top: 170px;
+  .sponsor-block {
+    margin: 50px 0;
+    padding: 55px 0;
+    border-top: 1px solid #2C2C2C;
+    border-bottom: 1px solid #2C2C2C;
+    div {
+      padding: 0 30px;
+      &:first-child {
+        padding-left: 0;
+
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+  .content-sponsor {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 20px;
+    position: relative;
+   
+    margin-right: auto;
+    &::before {
+      content: "";
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: block;
+      width: 0;
+      height: 0;
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      border-left: 5px solid #00FFCE;
+      position: absolute;
+      top: 8px;
+      left: -20px;
+
+    }
+  }
+}
+
+.section__time {
+  margin-top: 190px;
   background-image: url("../img/bg-time.png");
   background-repeat: no-repeat;
   background-position: 50vw top;
