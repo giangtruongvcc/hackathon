@@ -467,6 +467,7 @@
   background-position: 0 50px;
   background-origin: padding-box;
   margin-top: 80px;
+
   .title {
     color: rgba(255, 255, 255, 0.37);
     letter-spacing: 0.15em;
@@ -482,6 +483,9 @@
   .top-item {
     .block-right {
       padding-left: 0;
+      @include maxSmall {
+        padding: 0 15px;
+      }
       .fac-logo {
         position: relative;
         top: -3px;
@@ -490,6 +494,14 @@
         color: rgba(255, 255, 255, 0.87);
         margin-top: 20px;
         text-transform: uppercase;
+      }
+      .float-left {
+        @include maxSmall {
+          width: 100%;
+          .row {
+            text-align: center;
+          }
+        }
       }
     }
     .prize-cash {
@@ -527,15 +539,37 @@
         bottom: -15px;
         left: -10px;
         position: relative;
+        @include maxMobile {
+          left: 70vw;
+          bottom: 30px;
+        }
       }
     }
     .block-left {
       background-image: url("../img/border-2-new.png");
-      background-size: 85%;
+      background-size: cover;
+      @include maxSmall {
+        background-size: cover !important;
+      }
+      @include maxSmall2 {
+        background-size: contain;
+      }
+      @include maxMobile {
+        background-image: unset;
+      }
       .sponsor {
         .des-prize {
           width: 75%;
+          @include maxMobile {
+            margin-top: 0 !important;
+          }
         }
+      }
+    }
+    .block-right {
+      @include maxMobile {
+        padding-left: 30px;
+        padding-top: 0;
       }
     }
     .title_sections {
@@ -551,8 +585,11 @@
     background-origin: padding-box;
     @include maxMobile {
       background-size: cover;
+      background-image: unset;
     }
-
+    @include maxSmall {
+      background-size: cover;
+    }
     h4 {
       font-size: 36px;
       font-weight: 700;
@@ -655,8 +692,9 @@
     div {
       padding: 0 30px;
       &:first-child {
-        padding-left: 0;
-
+        @include minMedium {
+          padding-left: 0px;
+        }
       }
       &:last-child {
         padding-right: 0;

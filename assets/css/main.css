@@ -3366,6 +3366,11 @@ header .switch-block .switch-lang img {
 .section__priorities .top-item .block-right {
   padding-left: 0;
 }
+@media (max-width: 991px) {
+  .section__priorities .top-item .block-right {
+    padding: 0 15px;
+  }
+}
 .section__priorities .top-item .block-right .fac-logo {
   position: relative;
   top: -3px;
@@ -3374,6 +3379,14 @@ header .switch-block .switch-lang img {
   color: rgba(255, 255, 255, 0.87);
   margin-top: 20px;
   text-transform: uppercase;
+}
+@media (max-width: 991px) {
+  .section__priorities .top-item .block-right .float-left {
+    width: 100%;
+  }
+  .section__priorities .top-item .block-right .float-left .row {
+    text-align: center;
+  }
 }
 .section__priorities .top-item .prize-cash {
   color: #00FFCE;
@@ -3410,12 +3423,44 @@ header .switch-block .switch-lang img {
   left: -10px;
   position: relative;
 }
+@media (max-width: 767px) {
+  .section__priorities .bot-item .prize-total::after {
+    left: 70vw;
+    bottom: 30px;
+  }
+}
 .section__priorities .bot-item .block-left {
   background-image: url("../img/border-2-new.png");
-  background-size: 85%;
+  background-size: cover;
+}
+@media (max-width: 991px) {
+  .section__priorities .bot-item .block-left {
+    background-size: cover !important;
+  }
+}
+@media (max-width: 1199px) {
+  .section__priorities .bot-item .block-left {
+    background-size: contain;
+  }
+}
+@media (max-width: 767px) {
+  .section__priorities .bot-item .block-left {
+    background-image: unset;
+  }
 }
 .section__priorities .bot-item .block-left .sponsor .des-prize {
   width: 75%;
+}
+@media (max-width: 767px) {
+  .section__priorities .bot-item .block-left .sponsor .des-prize {
+    margin-top: 0 !important;
+  }
+}
+@media (max-width: 767px) {
+  .section__priorities .bot-item .block-right {
+    padding-left: 30px;
+    padding-top: 0;
+  }
 }
 .section__priorities .bot-item .title_sections {
   margin-top: 0.625rem;
@@ -3429,6 +3474,12 @@ header .switch-block .switch-lang img {
   background-origin: padding-box;
 }
 @media (max-width: 767px) {
+  .section__priorities .block-left {
+    background-size: cover;
+    background-image: unset;
+  }
+}
+@media (max-width: 991px) {
   .section__priorities .block-left {
     background-size: cover;
   }
@@ -3533,8 +3584,10 @@ header .switch-block .switch-lang img {
 .section__sponsor .sponsor-block div {
   padding: 0 30px;
 }
-.section__sponsor .sponsor-block div:first-child {
-  padding-left: 0;
+@media (min-width: 992px) {
+  .section__sponsor .sponsor-block div:first-child {
+    padding-left: 0px;
+  }
 }
 .section__sponsor .sponsor-block div:last-child {
   padding-right: 0;
