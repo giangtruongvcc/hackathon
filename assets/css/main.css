@@ -482,6 +482,7 @@ img {
 .loading_overlay .loader_logo .logo {
   width: 100%;
   height: auto;
+  min-width: 250px;
   -webkit-animation: text-focus-in 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both !important;
   animation: text-focus-in 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both !important;
 }
@@ -1910,10 +1911,6 @@ img {
 
 .font-s-35 {
   font-size: 35px !important;
-}
-
-.font-s-36 {
-  font-size: 36px !important;
 }
 
 .font-s-40 {
@@ -3347,12 +3344,6 @@ header .switch-block .switch-lang img {
   background-size: auto;
   background-position: 0 50px;
   background-origin: padding-box;
-  margin-top: 80px;
-}
-.section__priorities .title {
-  color: rgba(255, 255, 255, 0.37);
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
 }
 @media (max-width: 767px) {
   .section__priorities {
@@ -3363,6 +3354,7 @@ header .switch-block .switch-lang img {
 .section__priorities .title_sections {
   margin-bottom: 2.5rem;
 }
+<<<<<<< HEAD
 .section__priorities .top-item .block-right {
   padding-left: 0;
 }
@@ -3465,6 +3457,8 @@ header .switch-block .switch-lang img {
 .section__priorities .bot-item .title_sections {
   margin-top: 0.625rem;
 }
+=======
+>>>>>>> parent of b70f7d0... change layout
 .section__priorities .block-left {
   padding: 20px 55px 35px;
   background-image: url("../img/border2.png");
@@ -3485,11 +3479,11 @@ header .switch-block .switch-lang img {
   }
 }
 .section__priorities .block-left h4 {
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 700;
 }
 .section__priorities .block-right {
-  padding-left: 0;
+  padding-left: 40px;
   padding-right: 0;
   padding-top: 45px;
 }
@@ -3508,8 +3502,8 @@ header .switch-block .switch-lang img {
   margin-bottom: 20px;
 }
 .section__priorities .block-right ul {
-  -webkit-padding-start: 0;
-          padding-inline-start: 0;
+  -webkit-padding-start: 60px;
+          padding-inline-start: 60px;
 }
 @media (max-width: 991px) {
   .section__priorities .block-right ul {
@@ -3572,6 +3566,7 @@ header .switch-block .switch-lang img {
   color: #565656;
 }
 
+<<<<<<< HEAD
 .section__sponsor {
   margin-top: 170px;
 }
@@ -3616,8 +3611,10 @@ header .switch-block .switch-lang img {
   left: -20px;
 }
 
+=======
+>>>>>>> parent of b70f7d0... change layout
 .section__time {
-  margin-top: 190px;
+  margin-top: 170px;
   background-image: url("../img/bg-time.png");
   background-repeat: no-repeat;
   background-position: 50vw top;

@@ -466,6 +466,7 @@
   background-size: auto;
   background-position: 0 50px;
   background-origin: padding-box;
+<<<<<<< HEAD
   margin-top: 80px;
 
   .title {
@@ -473,6 +474,8 @@
     letter-spacing: 0.15em;
     text-transform: uppercase;
   }
+=======
+>>>>>>> parent of b70f7d0... change layout
   @include maxMobile {
     background-position-y: -10px;
     padding-top: 40px;
@@ -480,6 +483,7 @@
   .title_sections {
     margin-bottom: 2.5rem;
   }
+<<<<<<< HEAD
   .top-item {
     .block-right {
       padding-left: 0;
@@ -576,6 +580,9 @@
       margin-top: 0.625rem;
     }
   }
+=======
+
+>>>>>>> parent of b70f7d0... change layout
   .block-left {
     padding: 20px 55px 35px;
     background-image: url("../img/border2.png");
@@ -591,13 +598,13 @@
       background-size: cover;
     }
     h4 {
-      font-size: 36px;
+      font-size: 24px;
       font-weight: 700;
     }
 
   }
   .block-right {
-    padding-left: 0;
+    padding-left: 40px;
     padding-right: 0;
     padding-top: 45px;
     @include maxSmall {
@@ -614,7 +621,7 @@
 
     }
     ul {
-      padding-inline-start: 0;
+      padding-inline-start: 60px;
       @include maxSmall {
         padding-inline-start: 10px;
       }
@@ -682,6 +689,7 @@
 
 }
 
+<<<<<<< HEAD
 .section__sponsor {
   margin-top: 170px;
   .sponsor-block {
@@ -728,8 +736,10 @@
   }
 }
 
+=======
+>>>>>>> parent of b70f7d0... change layout
 .section__time {
-  margin-top: 190px;
+  margin-top: 170px;
   background-image: url("../img/bg-time.png");
   background-repeat: no-repeat;
   background-position: 50vw top;
